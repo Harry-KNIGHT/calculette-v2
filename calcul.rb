@@ -26,14 +26,7 @@ end
 
 
 line 
-puts "Hello wlecome onboard"
-line
-puts "What would you do ? "
-line
-
-puts "1 multiply, 2 divid, 3 modulo, 4 substract, 5 addition"
-line
-choice = gets.chomp.to_i
+puts "Hello welcome onboard"
 
 line
 puts "Give me the first number"
@@ -45,6 +38,14 @@ puts "Give me the second number"
 second_number = gets.chomp.to_i
 
 line
+puts " "
+line
+puts "What would you do with #{number_one} and #{second_number}? "
+line
+
+puts "1 multiply, 2 divid, 3 modulo, 4 substract, 5 addition"
+line
+choice = gets.chomp.to_i
 
 if choice == 1
   puts "The reslut of #{second_number} * #{number_one} is #{multiply(number_one, second_number)}"
@@ -57,5 +58,5 @@ elsif choice == 4
 elsif choice == 5
   puts "The reslut of #{second_number} + #{number_one} is #{addition(number_one, second_number)}"
 else
-  print "Impossible bro"
+  puts "Impossible bro"
 end
