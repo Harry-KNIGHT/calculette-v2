@@ -5,6 +5,7 @@ if numbers.even?
 else
     print "#{numbers} is impair"
 end
+print "\n"
 
 
 
